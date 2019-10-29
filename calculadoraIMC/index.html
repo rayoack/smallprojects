@@ -10,23 +10,27 @@
   <link rel="stylesheet" href="css/style.css"/>
 </header>
 <main class="container">
-  <form>
+  <form id="formImc" method="post">
     <label id="peso">
       <span>Peso:</span>
-      <input type="number" id="" step="0.1" required placeholder="0.0"/>
+      <input type="number" id="inputPeso" step="0.1" required placeholder="0.0"/>
     </label>
     <label id="altura">
       <span>Altura:</span>
-      <input type="number" id="" step="0.1" required placeholder="0.0"/>
+      <input type="number" id="inputAltura" step="0.1" required placeholder="0.0"/>
     </label>
    <label id="calcular">
       <input type="submit" value="CALCULAR"/>
     </label>
   </form>
+
   <div id="resultado">
-    <span>Seu IMC é {0.00}</span>
-    <span>{Abaixo do Peso}</span>
+    <span id="imc"></span>
+    <span id="status"></span>
   </div>
 </main>
 </body>
+
+<script src="js/index.js">
+</script>
 </html>
